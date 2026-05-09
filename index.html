@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora BDD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Calculadora">
+      <section class="calculator" data-testid="calculator">
+        <div class="display-panel" aria-live="polite">
+          <div class="expression" data-testid="expression">&nbsp;</div>
+          <output class="display" data-testid="display">0</output>
+        </div>
+
+        <div class="keypad" aria-label="Teclado da calculadora">
+          <button class="key key-utility" type="button" data-action="clear" data-testid="clear">AC</button>
+          <button class="key key-utility" type="button" data-action="delete" data-testid="delete">⌫</button>
+          <button class="key key-utility" type="button" data-action="percent" data-testid="percent">%</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="/" data-testid="divide">÷</button>
+
+          <button class="key" type="button" data-action="number" data-value="7" data-testid="digit-7">7</button>
+          <button class="key" type="button" data-action="number" data-value="8" data-testid="digit-8">8</button>
+          <button class="key" type="button" data-action="number" data-value="9" data-testid="digit-9">9</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="*" data-testid="multiply">×</button>
+
+          <button class="key" type="button" data-action="number" data-value="4" data-testid="digit-4">4</button>
+          <button class="key" type="button" data-action="number" data-value="5" data-testid="digit-5">5</button>
+          <button class="key" type="button" data-action="number" data-value="6" data-testid="digit-6">6</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="-" data-testid="subtract">−</button>
+
+          <button class="key" type="button" data-action="number" data-value="1" data-testid="digit-1">1</button>
+          <button class="key" type="button" data-action="number" data-value="2" data-testid="digit-2">2</button>
+          <button class="key" type="button" data-action="number" data-value="3" data-testid="digit-3">3</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="+" data-testid="add">+</button>
+
+          <button class="key" type="button" data-action="toggle-sign" data-testid="toggle-sign">±</button>
+          <button class="key" type="button" data-action="number" data-value="0" data-testid="digit-0">0</button>
+          <button class="key" type="button" data-action="decimal" data-testid="decimal">,</button>
+          <button class="key key-equals" type="button" data-action="equals" data-testid="equals">=</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
