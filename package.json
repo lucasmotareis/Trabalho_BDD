@@ -1,0 +1,20 @@
+{
+  "name": "trabalho-bdd-calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora web com testes BDD em Gherkin.",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm run test:bdd",
+    "test:bdd": "cucumber-js"
+  },
+  "keywords": [
+    "bdd",
+    "gherkin",
+    "calculadora"
+  ],
+  "author": "Lucas Mota Reis",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.3"
+  }
+}
